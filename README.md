@@ -12,9 +12,9 @@ The dataset contains Spotify track-level data with audio features (tempo, loudne
 
 **Exploratory Data Analysis**: Summary statistics, scatterplots of audio features vs. popularity, and a correlation matrix of predictor variables.
 
-**Model 1 — OLS (Audio Features Only)**: Baseline model using tempo, energy, loudness, and duration. Compared to the full model via ANOVA.
+**OLS Model 1**: Baseline model using tempo, energy, loudness, and duration. Compared to the full model via ANOVA.
 
-**Model 2 — OLS (Full Specification)**: Adds average artist popularity, mode, and genre. Residual diagnostics via studentized deleted residuals, QQ plots, skewness/kurtosis. Box-Cox transformation applied to identify optimal power transformation.
+**OLS Model 2**: Adds average artist popularity, mode, and genre. Residual diagnostics via studentized deleted residuals, QQ plots, skewness/kurtosis. Box-Cox transformation applied to identify optimal power transformation.
 
 **Fourth-Root Model**: Power transformation (λ ≈ 0.25) suggested by Box-Cox. Improved predictive accuracy relative to untransformed OLS.
 
