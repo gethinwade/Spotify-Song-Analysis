@@ -10,17 +10,17 @@ The dataset contains Spotify track-level data with audio features (tempo, loudne
 
 ## Methods
 
-**Exploratory Data Analysis** — Summary statistics, scatterplots of audio features vs. popularity, and a correlation matrix of predictor variables.
+**Exploratory Data Analysis**: Summary statistics, scatterplots of audio features vs. popularity, and a correlation matrix of predictor variables.
 
-**Model 1 — OLS (Audio Features Only)** — Baseline model using tempo, energy, loudness, and duration. Compared to the full model via ANOVA.
+**Model 1 — OLS (Audio Features Only)**: Baseline model using tempo, energy, loudness, and duration. Compared to the full model via ANOVA.
 
-**Model 2 — OLS (Full Specification)** — Adds average artist popularity, mode, and genre. Residual diagnostics via studentized deleted residuals, QQ plots, skewness/kurtosis. Box-Cox transformation applied to identify optimal power transformation.
+**Model 2 — OLS (Full Specification)**: Adds average artist popularity, mode, and genre. Residual diagnostics via studentized deleted residuals, QQ plots, skewness/kurtosis. Box-Cox transformation applied to identify optimal power transformation.
 
-**Fourth-Root Model** — Power transformation (λ ≈ 0.25) suggested by Box-Cox. Improved predictive accuracy relative to untransformed OLS.
+**Fourth-Root Model**: Power transformation (λ ≈ 0.25) suggested by Box-Cox. Improved predictive accuracy relative to untransformed OLS.
 
-**Quasi-Poisson GLM** — Log-link GLM to better reflect the bounded, right-skewed nature of popularity scores. Pseudo R-Squared via deviance ratio, coefficients interpreted via exponentiation, Cook's distance for influential observations.
+**Quasi-Poisson GLM**: GLM to better reflect the bounded, right-skewed nature of popularity scores. Pseudo R-Squared via deviance ratio, coefficients interpreted via exponentiation, Cook's distance for influential observations.
 
-**Model Comparison via Cross Validation** — 5-fold CV with MAE on the original popularity scale across all three model families. Fourth-root predictions back-transformed to ensure comparability.
+**Model Comparison via Cross Validation**: 5-fold CV with MAE on the original popularity scale across all three model families. Fourth-root predictions back-transformed to ensure comparability.
 
 ## Key Findings
 
