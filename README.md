@@ -8,6 +8,9 @@ An analysis of what drives song popularity on Spotify, comparing multiple regres
 
 The dataset contains Spotify track-level data with audio features (tempo, loudness, energy, duration), metadata (genre, mode), and artist metrics. The response variable is a song's popularity score (0–100).
 
+Link: https://www.kaggle.com/datasets/bwandowando/spotify-songs-with-attributes-and-lyrics<img width="661" height="35" alt="image" src="https://github.com/user-attachments/assets/9f0e8016-c130-4869-a02b-1cd042d61a2a" />
+
+
 ## Methods
 
 **Exploratory Data Analysis**: Summary statistics, scatterplots of audio features vs. popularity, and a correlation matrix of predictor variables.
